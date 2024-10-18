@@ -1,30 +1,26 @@
 //1
-const arr =[2,3,4,5,6];
+let arr = [2,3,4,5]
 
-
-function doubleNumber(){
-    const doubledArray = []
-   for(const numb of arr){
-doubledArray.push(numb * 2)
-   }
-   return doubledArray;
-
+function doubleNum(element){
+for(let x of arr){
+  console.log  (x * 2)
 }
-const result = doubleNumber();
-console.log(result);
+}
+doubleNum(arr)
 //2
-const person = {
-name: 'Sam',
-age: 30,
-status: "married",
-
-}
-function displayKeyValue(person){
-    for(let key in person){
-        console.log(`${key}: ${person[key]}`);
-    }
+let person = {
+    name:"Sam",
+    age: 30,
+    status: "Married",
+};
+function displayKeyValue (){
+   for (key in person){
+    console.log(`${key}: ${person[key]}`)
+   }
 }
 displayKeyValue(person)
+
+
 
 
 //3
